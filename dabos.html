@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pedoman BOSP SMKN 1 Cilimus</title>
+		<script src="/_sdk/element_sdk.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			body {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			html {
+				height: 100%;
+			}
+
+			.gradient-bg {
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			}
+
+			.card {
+				transition: all 0.3s ease;
+				border-left: 4px solid transparent;
+			}
+
+			.card:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+				border-left-color: #667eea;
+			}
+
+			.emoji-icon {
+				font-size: 2rem;
+				display: inline-block;
+				margin-right: 0.5rem;
+			}
+
+			.section-number {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.5rem;
+				height: 2.5rem;
+				border-radius: 50%;
+				font-weight: bold;
+				margin-right: 0.75rem;
+				flex-shrink: 0;
+			}
+
+			.content-list {
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.content-list li {
+				padding-left: 1.5rem;
+				position: relative;
+				margin-bottom: 0.75rem;
+			}
+
+			.content-list li:before {
+				content: "✓";
+				position: absolute;
+				left: 0;
+				font-weight: bold;
+			}
+
+			.sub-list {
+				list-style: none;
+				padding-left: 1.5rem;
+				margin-top: 0.5rem;
+			}
+
+			.sub-list li:before {
+				content: "→";
+			}
+
+			.highlight-box {
+				border-radius: 8px;
+				padding: 1rem;
+				margin: 1rem 0;
+			}
+
+			.sticky-header {
+				position: sticky;
+				top: 0;
+				z-index: 50;
+				backdrop-filter: blur(10px);
+			}
+
+			@media (max-width: 768px) {
+				.emoji-icon {
+					font-size: 1.5rem;
+				}
+
+				.section-number {
+					width: 2rem;
+					height: 2rem;
+					font-size: 0.875rem;
+				}
+			}
+
+			.scroll-smooth {
+				scroll-behavior: smooth;
+			}
+		</style>
+		<style>
+			@view-transition {
+				navigation: auto;
+			}
+		</style>
+		<script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+	</head>
+	<body class="scroll-smooth">
+		<div class="min-h-full flex flex-col">
+			<!-- Header -->
+			<header class="gradient-bg text-white sticky-header shadow-lg">
+				<div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+					<div class="text-center">
+						<h1 id="school-name" class="text-xl sm:text-2xl font-bold mb-1">
+							SMKN 1 CILIMUS
+						</h1>
+						<h2
+							id="page-title"
+							class="text-sm sm:text-base font-semibold mb-0.5"
+						>
+							Evaluasi dan Sinkronisasi Penggunaan Dana BOSP
+						</h2>
+						<p id="academic-year" class="text-xs sm:text-sm opacity-90">
+							TA 2025 untuk 2026
+						</p>
+					</div>
+				</div>
+			</header>
+			<!-- Main Content -->
+			<main class="flex-grow bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+				<div class="max-w-7xl mx-auto">
+					<!-- Introduction -->
+					<div class="bg-white rounded-lg shadow-md p-6 mb-8">
+						<h3 class="text-2xl font-bold text-gray-800 mb-4">
+							📋 Ketentuan Utama Penggunaan Dana BOSP
+						</h3>
+						<p class="text-gray-600 leading-relaxed">
+							Pedoman ini disusun untuk memastikan penggunaan dana BOSP yang
+							akuntabel, transparan, dan sesuai dengan ketentuan yang berlaku.
+							Setiap unit/jurusan wajib memahami dan menerapkan seluruh
+							ketentuan berikut.
+						</p>
+					</div>
+					<!-- Section 1 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-blue-100 text-blue-600">1</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								📚 Pembelian Buku
+							</h4>
+						</div>
+						<div
+							class="highlight-box bg-yellow-50 border-l-4 border-yellow-400"
+						>
+							<p class="font-semibold text-gray-800">
+								Alokasi minimal 10% dari pagu anggaran BOSP
+							</p>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">Diutamakan:</p>
+						<ul class="content-list text-gray-600">
+							<li>Buku teks pelajaran sesuai kurikulum yang berlaku</li>
+							<li>
+								Buku referensi kejuruan, modul praktikum, dan buku penunjang
+								literasi
+							</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mt-3 mb-2">
+							Daftar buku mengacu pada:
+						</p>
+						<ul class="content-list text-gray-600">
+							<li>Kebutuhan aktual pembelajaran</li>
+							<li>
+								Rekomendasi guru mata pelajaran dan kepala program keahlian
+							</li>
+						</ul>
+					</div>
+					<!-- Section 2 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-green-100 text-green-600">2</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								🔧 Pemeliharaan Sarana dan Pembelian Meubelair
+							</h4>
+						</div>
+						<div class="highlight-box bg-red-50 border-l-4 border-red-400">
+							<p class="font-semibold text-gray-800">
+								Penggunaan anggaran maksimal 20% dari pagu anggaran
+							</p>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">
+							Diprioritaskan untuk:
+						</p>
+						<ul class="content-list text-gray-600">
+							<li>
+								Perbaikan sarana praktik kejuruan yang berdampak langsung pada
+								proses pembelajaran
+							</li>
+							<li>Penggantian meubelair yang rusak/tidak layak pakai</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mt-3 mb-2">Wajib didukung:</p>
+						<ul class="content-list text-gray-600">
+							<li>Berita acara pemeriksaan kerusakan</li>
+							<li>Dokumentasi sebelum dan sesudah perbaikan/penggantian</li>
+						</ul>
+					</div>
+					<!-- Section 3 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-purple-100 text-purple-600"
+								>3</span
+							>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								✏️ Pembelanjaan ATK
+							</h4>
+						</div>
+						<div
+							class="highlight-box bg-purple-50 border-l-4 border-purple-400"
+						>
+							<p class="font-semibold text-gray-800">
+								Anggaran ATK dialihkan seluruhnya ke Unit Pengelolaan ATK
+								Sekolah sebagai pusat distribusi
+							</p>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">Mekanisme:</p>
+						<ul class="content-list text-gray-600">
+							<li>
+								Masing-masing unit/jurusan mengajukan kebutuhan ATK melalui
+								formulir permintaan yang disahkan
+							</li>
+							<li>Distribusi ATK dicatat dalam buku/bukti serah terima</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mt-3 mb-2">Tujuan:</p>
+						<ul class="content-list text-gray-600">
+							<li>Menghindari pembelian ATK ganda</li>
+							<li>Memudahkan kontrol stok dan pelaporan</li>
+						</ul>
+					</div>
+					<!-- Section 4 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-pink-100 text-pink-600">4</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								📸 SPJ Tentang Foto Barang/Foto Kegiatan
+							</h4>
+						</div>
+						<div class="space-y-4">
+							<div>
+								<p class="font-semibold text-gray-800 mb-2">
+									a. SPJ Foto Barang
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>
+										Foto barang
+										<strong
+											>harus sesuai dengan volume dan satuan pengajuan
+											barang</strong
+										>
+									</li>
+									<li>
+										Jumlah, jenis, dan spesifikasi harus tampak jelas dalam foto
+									</li>
+								</ul>
+							</div>
+							<div>
+								<p class="font-semibold text-gray-800 mb-2">
+									b. Pengajuan Barang (Excel)
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>
+										<strong>Wajib menambahkan Kolom Merek</strong> dari
+										tiap-tiap item barang
+									</li>
+								</ul>
+							</div>
+							<div class="highlight-box bg-blue-50 border-l-4 border-blue-400">
+								<p class="font-semibold text-gray-800 mb-2">
+									c. Pelaporan Hasil Kegiatan (Wajib untuk 2026)
+								</p>
+								<p class="text-gray-700 mb-2">
+									Tiap-tiap pengeluaran
+									<strong>wajib melaporkan hasil dari kegiatan tersebut</strong>
+								</p>
+								<div class="bg-white rounded-lg p-4 mt-3">
+									<p class="font-semibold text-gray-800 mb-2">
+										📋 Contoh: Jurusan Kuliner
+									</p>
+									<p class="text-gray-700 mb-2">
+										Pembelian daging ayam, daging sapi, dan bahan pendukung
+										pembuatan makanan:
+									</p>
+									<ul class="content-list text-gray-600">
+										<li>Foto bahan yang dibeli (daging ayam, sapi, dll)</li>
+										<li>Foto kegiatan pengolahan makanan (proses memasak)</li>
+										<li>Foto hasil makanan yang sudah jadi</li>
+										<li>
+											Lampiran format penilaian dari pembuatan makanan tersebut
+											oleh guru kejuruannya
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="highlight-box bg-red-50 border-l-4 border-red-400">
+								<p class="font-semibold text-red-600 mb-2">
+									⚠️ LARANGAN PENTING:
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>
+										<strong
+											>d. Foto barang tidak boleh menggunakan foto yang
+											lama</strong
+										>
+										(bulan sebelumnya/tahun sebelumnya)
+									</li>
+									<li>
+										<strong
+											>e. Foto barang tidak boleh mengambil dari
+											Google/Marketplace</strong
+										>
+										karena bisa terdeteksi jika menggunakan Google Lens Camera
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Section 5 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-indigo-100 text-indigo-600"
+								>5</span
+							>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								👨‍🏫 SPJ Narasumber
+							</h4>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">
+							Kelengkapan dokumen sama seperti tahun 2025:
+						</p>
+						<ul class="content-list text-gray-600">
+							<li>MoU/Perjanjian Kerja Sama</li>
+							<li>Surat Permohonan</li>
+							<li>Surat Balasan/Penugasan</li>
+							<li>Surat Pemberittahuan Kegiatan</li>
+							<li>Daftar Penerimaan Honorarium</li>
+							<li>Daftar Hadir</li>
+							<li>CV</li>
+							<li>Fotokopi KTP</li>
+							<li>NPWP</li>
+							<li>Materi yang disampaikan</li>
+							<li>Dokumentasi Narasumber saat kegiatan</li>
+							<li>Notula</li>
+						</ul>
+						<div
+							class="highlight-box bg-blue-50 border-l-4 border-blue-400 mt-4"
+						>
+							<p class="font-semibold text-gray-800 mb-2">Ketentuan Khusus:</p>
+							<ul class="content-list text-gray-600">
+								<li>Rekening narasumber <strong>wajib BANK BJB</strong></li>
+								<li>
+									Narasumber
+									<strong>bukan ASN Dinas Provinsi Jawa Barat</strong> (termasuk
+									guru SMK/SMA/SLB Negeri)
+								</li>
+								<li>
+									Narasumber <strong>tidak boleh</strong> menerima Perjadin
+									terpisah; seluruh hak narasumber sudah diperhitungkan dalam
+									biaya kegiatan
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 6 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-teal-100 text-teal-600">6</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								🚗 SPJ Perjalanan Dinas
+							</h4>
+						</div>
+						<p class="text-gray-700 mb-4 italic">
+							Ketentuan masih sama seperti tahun 2025
+						</p>
+						<div class="space-y-4 mb-6">
+							<div>
+								<p class="font-semibold text-gray-800 mb-3">
+									Besaran Biaya Perjalanan Dinas:
+								</p>
+								<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+									<div
+										class="highlight-box bg-green-50 border-l-4 border-green-400"
+									>
+										<p class="font-semibold text-gray-800 mb-1">
+											a. Dalam Kota (Kuningan)
+										</p>
+										<p class="text-2xl font-bold text-green-600 mt-2">
+											Rp 100.000
+										</p>
+										<p class="text-sm text-gray-600 mt-1">
+											+ Melampirkan Nota Bensin
+										</p>
+									</div>
+									<div
+										class="highlight-box bg-blue-50 border-l-4 border-blue-400"
+									>
+										<p class="font-semibold text-gray-800 mb-1">
+											b. Ke Cirebon
+										</p>
+										<p class="text-2xl font-bold text-blue-600 mt-2">
+											Rp 150.000
+										</p>
+									</div>
+									<div
+										class="highlight-box bg-purple-50 border-l-4 border-purple-400"
+									>
+										<p class="font-semibold text-gray-800 mb-1">
+											c. Luar Kuningan &amp; Cirebon
+										</p>
+										<p class="text-2xl font-bold text-purple-600 mt-2">
+											Rp 430.000
+										</p>
+									</div>
+								</div>
+							</div>
+							<div
+								class="highlight-box bg-yellow-50 border-l-4 border-yellow-400"
+							>
+								<p class="font-semibold text-gray-800 mb-2">
+									d. Foto Kegiatan Perjalanan Dinas
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>
+										<strong
+											>Wajib menampilkan wajah menggunakan Time Stamp</strong
+										>
+									</li>
+									<li>
+										Timestamp harus menunjukkan tanggal dan jam kegiatan dengan
+										jelas
+									</li>
+								</ul>
+							</div>
+							<div>
+								<p class="font-semibold text-gray-800 mb-2">
+									e. Kelengkapan SPJ Perjalanan Dinas (sama seperti 2025):
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>
+										<strong>Surat Undangan</strong> dari penyelenggara kegiatan
+									</li>
+									<li>
+										<strong>SPPD</strong> (Surat Perintah Perjalanan Dinas) yang
+										telah ditandatangani sesuai alur
+									</li>
+									<li>
+										<strong>Catatan/Laporan</strong> hasil kegiatan (ringkasan
+										materi, tindak lanjut, dsb.)
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Section 7 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-orange-100 text-orange-600"
+								>7</span
+							>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								🏢 Ketentuan SPJ Sewa
+							</h4>
+						</div>
+						<p class="text-gray-700 font-semibold mb-3">
+							Kelengkapan dokumen yang wajib dilampirkan:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>
+								<strong>MoU Sewa</strong> - Perjanjian sewa yang telah
+								ditandatangani kedua belah pihak
+							</li>
+							<li>
+								<strong>Kwitansi</strong> - Bukti pembayaran sewa yang sah
+							</li>
+							<li>
+								<strong>Foto lokasi sewa/kendaraan</strong> - Dokumentasi objek
+								yang disewa (apabila sewanya kendaraan, foto kendaraan harus
+								jelas)
+							</li>
+							<li>
+								<strong>KTP/NPWP</strong> - Fotokopi identitas pemilik/penyewa
+							</li>
+							<li>
+								<strong>STNK</strong> - Khusus untuk sewa kendaraan (fotokopi
+								STNK kendaraan yang disewa)
+							</li>
+						</ul>
+						<div
+							class="highlight-box bg-orange-50 border-l-4 border-orange-400"
+						>
+							<p class="font-semibold text-gray-800 mb-2">
+								⚠️ Catatan Penting:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>
+									Semua dokumen harus lengkap dan sesuai dengan objek yang
+									disewa
+								</li>
+								<li>
+									Foto harus menunjukkan kondisi aktual dan timestamp yang jelas
+								</li>
+								<li>
+									MoU harus mencantumkan periode sewa, harga, dan spesifikasi
+									objek sewa
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 8 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-amber-100 text-amber-600">8</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								🏪 Ketentuan Penggunaan CV dalam Pembelanjaan
+							</h4>
+						</div>
+						<div class="highlight-box bg-red-50 border-l-4 border-red-400 mb-4">
+							<p class="font-semibold text-red-600 text-lg mb-2">
+								Aturan Baru Tahun 2026:
+							</p>
+							<p class="text-gray-800 font-semibold text-xl">
+								1 CV = 1 Jenis Pembelanjaan
+							</p>
+						</div>
+						<div class="bg-blue-50 rounded-lg p-4 mb-4">
+							<p class="font-semibold text-gray-800 mb-2">
+								📋 Contoh Penerapan:
+							</p>
+							<p class="text-gray-700 mb-2">
+								Jika pembelanjaan ATK menggunakan <strong>CV Indotar</strong>,
+								maka:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>
+									Dalam waktu <strong>1 Tahun</strong> semua pembelanjaan ATK
+									<strong>WAJIB ke CV Indotar</strong>
+								</li>
+								<li>
+									Tidak boleh berganti-ganti CV untuk jenis pembelanjaan yang
+									sama
+								</li>
+								<li>Konsistensi vendor untuk setiap kategori pembelanjaan</li>
+							</ul>
+						</div>
+						<div
+							class="highlight-box bg-yellow-50 border-l-4 border-yellow-400"
+						>
+							<p class="font-semibold text-gray-800 mb-2">⚠️ LARANGAN:</p>
+							<p class="text-gray-700 mb-2">
+								<strong
+									>Tidak bisa 1 CV digunakan untuk pembelanjaan seluruh Kode
+									Rekening</strong
+								>
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>Setiap CV hanya untuk 1 jenis pembelanjaan spesifik</li>
+								<li>
+									CV yang sama tidak boleh digunakan untuk berbagai kategori
+									barang/jasa yang berbeda
+								</li>
+								<li>
+									Contoh: CV Indotar untuk ATK, maka tidak boleh digunakan untuk
+									pembelian buku, alat praktik, atau kategori lainnya
+								</li>
+							</ul>
+						</div>
+						<div class="bg-green-50 rounded-lg p-4 mt-4">
+							<p class="font-semibold text-gray-800 mb-2">
+								✅ Tujuan Kebijakan:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>Meningkatkan akuntabilitas dan transparansi pengadaan</li>
+								<li>Memudahkan tracking dan audit pembelanjaan per kategori</li>
+								<li>Mencegah konflik kepentingan dan monopoli vendor</li>
+								<li>Memastikan spesialisasi vendor sesuai jenis barang/jasa</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 9 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-orange-100 text-orange-600"
+								>9</span
+							>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								📊 Pelaporan &amp; Transparansi Anggaran
+							</h4>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">
+							Semua kegiatan wajib didukung dokumen pertanggungjawaban yang
+							lengkap dan valid:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>
+								Dokumen administrasi (SK, undangan, daftar hadir, berita acara)
+							</li>
+							<li>
+								Bukti transaksi (nota, kuitansi, faktur, kontrak bila ada)
+							</li>
+							<li>Bukti fisik pelaksanaan (foto/video, produk, laporan)</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mb-2">
+							Pelaporan output harus terukur dan dapat diverifikasi:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>Jumlah peserta yang mengikuti kegiatan</li>
+							<li>Kompetensi yang dicapai (indikator sebelum-sesudah)</li>
+							<li>Produk yang dihasilkan (jumlah, jenis, kualitas)</li>
+						</ul>
+						<div
+							class="highlight-box bg-orange-50 border-l-4 border-orange-400"
+						>
+							<p class="font-semibold text-gray-800 mb-2">
+								Prinsip Keterbukaan Informasi:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>
+									Rencana dan realisasi anggaran diinformasikan secara berkala
+									kepada Kepala Sekolah, Tim Manajemen BOSP, dan Kepala Program
+									Keahlian
+								</li>
+								<li>
+									Laporan ringkas dapat disosialisasikan pada rapat dewan
+									guru/komite sesuai kebutuhan
+								</li>
+								<li>
+									Dilakukan <strong>audit internal berkala</strong> oleh Tim
+									BOSP Sekolah (minimal per triwulan)
+								</li>
+							</ul>
+						</div>
+						<div class="highlight-box bg-red-50 border-l-4 border-red-400 mt-4">
+							<p class="font-semibold text-red-600 mb-2">
+								Harus Tegas Menghindari:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>Pembiayaan kegiatan fiktif</li>
+								<li>Kegiatan yang tidak sesuai dengan RKA</li>
+								<li>Pengeluaran yang tidak didukung dokumen sah</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 10 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-cyan-100 text-cyan-600">10</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								🛒 Pengadaan Barang &amp; Jasa
+							</h4>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">Wajib mengikuti:</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>PEDOMAN BOSP terbaru</li>
+							<li>e-Katalog bila barang/jasa tersedia di dalamnya</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mb-2">
+							Harga satuan mengacu pada:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>Standar biaya masukan daerah dan ketentuan yang berlaku</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mb-2">Setiap Kegiatan:</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>Harus Memiliki KAK</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mb-2">
+							Prioritas diberikan pada:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>Barang berkualitas, aman digunakan siswa</li>
+							<li>
+								Memiliki garansi purna jual bila relevan (alat praktik,
+								elektronik, dsb.)
+							</li>
+						</ul>
+						<div class="highlight-box bg-cyan-50 border-l-4 border-cyan-400">
+							<p class="font-semibold text-gray-800 mb-2">
+								Proses pengadaan harus:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>
+									Tertib administrasi (ada penunjukan, kontrak/SPK bila perlu,
+									berita acara serah terima)
+								</li>
+								<li>
+									<strong>Bebas konflik kepentingan</strong> (tidak ada hubungan
+									kepemilikan yang merugikan negara/sekolah)
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 11 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-lime-100 text-lime-600">11</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								📈 Pengendalian dan Monitoring
+							</h4>
+						</div>
+						<p class="text-gray-700 font-semibold mb-2">
+							Monitoring dilaksanakan oleh Tim BOSP Sekolah, meliputi:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>Kesesuaian realisasi terhadap RKA</li>
+							<li>Kesesuaian bukti fisik dengan pengeluaran</li>
+						</ul>
+						<p class="text-gray-700 font-semibold mb-2">
+							Dilakukan verifikasi berkala terhadap output kompetensi jurusan:
+						</p>
+						<ul class="content-list text-gray-600 mb-4">
+							<li>Portofolio siswa</li>
+							<li>Hasil uji kompetensi</li>
+							<li>Produk praktik industri</li>
+						</ul>
+						<div class="highlight-box bg-lime-50 border-l-4 border-lime-400">
+							<p class="font-semibold text-gray-800 mb-2">Evaluasi Bulanan:</p>
+							<ul class="content-list text-gray-600">
+								<li>Meninjau serapan anggaran per akun dan per jurusan</li>
+								<li>Mencegah penumpukan anggaran di akhir tahun</li>
+								<li>
+									Menetapkan langkah korektif bila ada deviasi dari perencanaan
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 12 -->
+					<div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+						<div class="flex items-start mb-4">
+							<span class="section-number bg-rose-100 text-rose-600">12</span>
+							<h4 class="text-xl font-bold text-gray-800 flex-grow">
+								🎓 Akuntabilitas Program Kejuruan
+							</h4>
+						</div>
+						<p class="text-gray-700 font-semibold mb-3">
+							Dana BOSP wajib berkontribusi nyata terhadap:
+						</p>
+						<div class="space-y-4">
+							<div class="highlight-box bg-blue-50 border-l-4 border-blue-400">
+								<p class="font-semibold text-gray-800 mb-2">
+									1. Penguatan Kompetensi Keahlian Siswa
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>Kegiatan praktik kejuruan</li>
+									<li>Pendalaman materi sesuai SKKNI/KKNI/Kurikulum terbaru</li>
+								</ul>
+							</div>
+							<div
+								class="highlight-box bg-green-50 border-l-4 border-green-400"
+							>
+								<p class="font-semibold text-gray-800 mb-2">
+									2. Dukungan DUDIKA
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>
+										Kegiatan kolaborasi dengan dunia usaha/dunia
+										industri/lembaga kerja
+									</li>
+									<li>
+										Kunjungan industri, magang, teaching factory, project
+										bersama
+									</li>
+								</ul>
+							</div>
+							<div
+								class="highlight-box bg-purple-50 border-l-4 border-purple-400"
+							>
+								<p class="font-semibold text-gray-800 mb-2">
+									3. Sertifikasi Kompetensi
+								</p>
+								<ul class="content-list text-gray-600">
+									<li>Kegiatan uji kompetensi siswa</li>
+									<li>
+										Pembiayaan asesor, tempat uji kompetensi (TUK), dan
+										perangkat uji sesuai aturan
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div
+							class="highlight-box bg-rose-50 border-l-4 border-rose-400 mt-4"
+						>
+							<p class="font-semibold text-gray-800 mb-2">
+								Bukti hasil kegiatan dikumpulkan dalam bentuk:
+							</p>
+							<ul class="content-list text-gray-600">
+								<li>Foto/video hasil kegiatan (termasuk proses dan produk)</li>
+								<li>
+									Produk nyata (jika ada): produk kuliner, kriya, desain,
+									rekayasa, dsb.
+								</li>
+								<li>
+									Laporan tertulis: laporan pelaksanaan kegiatan dan penilaian
+									guru kejuruan/pernyataan capaian kompetensi
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Summary Box -->
+					<div
+						class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg p-6 text-white"
+					>
+						<h3 class="text-2xl font-bold mb-4 flex items-center">
+							<span class="text-3xl mr-3">✅</span> Ringkasan Penting
+						</h3>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+							<div class="bg-white bg-opacity-20 rounded-lg p-4">
+								<p class="font-semibold mb-2">📚 Buku: Min. 10%</p>
+								<p class="text-sm opacity-90">Dari total pagu anggaran</p>
+							</div>
+							<div class="bg-white bg-opacity-20 rounded-lg p-4">
+								<p class="font-semibold mb-2">🔧 Sarana: Maks. 20%</p>
+								<p class="text-sm opacity-90">Dari total pagu anggaran</p>
+							</div>
+							<div class="bg-white bg-opacity-20 rounded-lg p-4">
+								<p class="font-semibold mb-2">📸 Foto Wajib Asli</p>
+								<p class="text-sm opacity-90">Tidak boleh dari Google/lama</p>
+							</div>
+							<div class="bg-white bg-opacity-20 rounded-lg p-4">
+								<p class="font-semibold mb-2">🏦 Rekening BJB</p>
+								<p class="text-sm opacity-90">Untuk semua narasumber</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- Footer -->
+			<footer class="bg-gray-800 text-white py-6 mt-8">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+					<p id="footer-text" class="text-sm">
+						© 2025 SMKN 1 Cilimus - Pedoman BOSP
+					</p>
+					<p class="text-xs mt-2 opacity-75">
+						Dokumen ini bersifat internal dan wajib dipatuhi oleh seluruh
+						unit/jurusan
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script>
+			const defaultConfig = {
+				school_name: "SMKN 1 CILIMUS",
+				page_title: "Evaluasi dan Sinkronisasi Penggunaan Dana BOSP",
+				academic_year: "TA 2025 untuk 2026",
+				footer_text: "© 2025 SMKN 1 Cilimus - Pedoman BOSP",
+				background_color: "#667eea",
+				surface_color: "#ffffff",
+				text_color: "#1f2937",
+				primary_action_color: "#667eea",
+				secondary_action_color: "#764ba2",
+			};
+
+			async function onConfigChange(config) {
+				const schoolName = document.getElementById("school-name");
+				const pageTitle = document.getElementById("page-title");
+				const academicYear = document.getElementById("academic-year");
+				const footerText = document.getElementById("footer-text");
+
+				if (schoolName)
+					schoolName.textContent =
+						config.school_name || defaultConfig.school_name;
+				if (pageTitle)
+					pageTitle.textContent = config.page_title || defaultConfig.page_title;
+				if (academicYear)
+					academicYear.textContent =
+						config.academic_year || defaultConfig.academic_year;
+				if (footerText)
+					footerText.textContent =
+						config.footer_text || defaultConfig.footer_text;
+
+				const bgColor =
+					config.background_color || defaultConfig.background_color;
+				const surfaceColor =
+					config.surface_color || defaultConfig.surface_color;
+				const textColor = config.text_color || defaultConfig.text_color;
+				const primaryColor =
+					config.primary_action_color || defaultConfig.primary_action_color;
+				const secondaryColor =
+					config.secondary_action_color || defaultConfig.secondary_action_color;
+
+				document.body.style.backgroundColor = bgColor;
+
+				const cards = document.querySelectorAll(".card");
+				cards.forEach((card) => {
+					card.style.backgroundColor = surfaceColor;
+					card.style.color = textColor;
+				});
+
+				const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+				headers.forEach((header) => {
+					if (!header.closest(".gradient-bg")) {
+						header.style.color = textColor;
+					}
+				});
+			}
+
+			function mapToCapabilities(config) {
+				return {
+					recolorables: [
+						{
+							get: () =>
+								config.background_color || defaultConfig.background_color,
+							set: (value) => {
+								config.background_color = value;
+								window.elementSdk.setConfig({ background_color: value });
+							},
+						},
+						{
+							get: () => config.surface_color || defaultConfig.surface_color,
+							set: (value) => {
+								config.surface_color = value;
+								window.elementSdk.setConfig({ surface_color: value });
+							},
+						},
+						{
+							get: () => config.text_color || defaultConfig.text_color,
+							set: (value) => {
+								config.text_color = value;
+								window.elementSdk.setConfig({ text_color: value });
+							},
+						},
+						{
+							get: () =>
+								config.primary_action_color ||
+								defaultConfig.primary_action_color,
+							set: (value) => {
+								config.primary_action_color = value;
+								window.elementSdk.setConfig({ primary_action_color: value });
+							},
+						},
+						{
+							get: () =>
+								config.secondary_action_color ||
+								defaultConfig.secondary_action_color,
+							set: (value) => {
+								config.secondary_action_color = value;
+								window.elementSdk.setConfig({ secondary_action_color: value });
+							},
+						},
+					],
+					borderables: [],
+					fontEditable: undefined,
+					fontSizeable: undefined,
+				};
+			}
+
+			function mapToEditPanelValues(config) {
+				return new Map([
+					["school_name", config.school_name || defaultConfig.school_name],
+					["page_title", config.page_title || defaultConfig.page_title],
+					[
+						"academic_year",
+						config.academic_year || defaultConfig.academic_year,
+					],
+					["footer_text", config.footer_text || defaultConfig.footer_text],
+				]);
+			}
+
+			if (window.elementSdk) {
+				window.elementSdk.init({
+					defaultConfig,
+					onConfigChange,
+					mapToCapabilities,
+					mapToEditPanelValues,
+				});
+			}
+		</script>
+		<script>
+			(function () {
+				function c() {
+					var b = a.contentDocument || a.contentWindow.document;
+					if (b) {
+						var d = b.createElement("script");
+						d.innerHTML =
+							"window.__CF$cv$params={r:'9a3487ba0187fd90',t:'MTc2Mzk0MTQyMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+						b.getElementsByTagName("head")[0].appendChild(d);
+					}
+				}
+				if (document.body) {
+					var a = document.createElement("iframe");
+					a.height = 1;
+					a.width = 1;
+					a.style.position = "absolute";
+					a.style.top = 0;
+					a.style.left = 0;
+					a.style.border = "none";
+					a.style.visibility = "hidden";
+					document.body.appendChild(a);
+					if ("loading" !== document.readyState) c();
+					else if (window.addEventListener)
+						document.addEventListener("DOMContentLoaded", c);
+					else {
+						var e = document.onreadystatechange || function () {};
+						document.onreadystatechange = function (b) {
+							e(b);
+							"loading" !== document.readyState &&
+								((document.onreadystatechange = e), c());
+						};
+					}
+				}
+			})();
+		</script>
+	</body>
+</html>
