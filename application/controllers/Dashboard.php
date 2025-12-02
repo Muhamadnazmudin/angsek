@@ -41,8 +41,82 @@ class Dashboard extends CI_Controller {
             $data['rekap_jurusan'] = $this->Anggaran_model->get_rekap_jurusan($jurusan_id);
 
             // Role jurusan tidak tampilkan SNP
-            $data['perencanaan_snp'] = [];
-            $data['total_jurusan'] = 1;
+            if ($role == 3) {
+
+    $data['total_anggaran'] = $this->Anggaran_model->get_total_anggaran($jurusan_id);
+    $data['tahap1'] = $this->Anggaran_model->get_tahap1($jurusan_id);
+    $data['tahap2'] = $this->Anggaran_model->get_tahap2($jurusan_id);
+
+    $data['tw1'] = $this->Anggaran_model->get_triwulan(1, $jurusan_id);
+    $data['tw2'] = $this->Anggaran_model->get_triwulan(2, $jurusan_id);
+    $data['tw3'] = $this->Anggaran_model->get_triwulan(3, $jurusan_id);
+    $data['tw4'] = $this->Anggaran_model->get_triwulan(4, $jurusan_id);
+
+    $data['bulan'] = $this->Anggaran_model->get_total_per_bulan($jurusan_id);
+
+    $data['total_rencana'] =
+        $data['bulan']->jan + $data['bulan']->feb + $data['bulan']->mar +
+        $data['bulan']->apr + $data['bulan']->mei + $data['bulan']->jun +
+        $data['bulan']->jul + $data['bulan']->agu + $data['bulan']->sep +
+        $data['bulan']->okt + $data['bulan']->nov + $data['bulan']->des;
+
+    $data['rekap_jurusan'] = $this->Anggaran_model->get_rekap_jurusan($jurusan_id);
+
+    // =====================================================
+    //          PERHITUNGAN SNP KHUSUS JURUSAN
+    // =====================================================
+    $snp_list = [
+        "Standar Isi" => ["isi"],
+        "Standar Proses" => ["proses"],
+        "Standar Pendidik dan Tenaga Kependidikan" => ["pendidik","ptk"],
+        "Standar Sarana dan Prasarana" => ["sarana","prasarana"],
+        "Standar Pengelolaan" => ["pengelolaan"],
+        "Standar Pembiayaan" => ["biaya","pembiayaan"],
+        "Standar Penilaian" => ["nilai","penilaian"]
+    ];
+
+    $hasil_snp = [];
+
+    foreach ($snp_list as $nama_snp => $keywords) {
+
+        // ambil ref_snp.id berdasarkan keyword
+        $this->db->select('id');
+        $this->db->from('ref_snp');
+        $this->db->group_start();
+        foreach ($keywords as $k) $this->db->or_like('snp', $k);
+        $this->db->group_end();
+        $ids = $this->db->get()->result_array();
+        $ref_ids = empty($ids) ? [0] : array_column($ids, 'id');
+
+        // Tahap 1 khusus jurusan
+        $this->db->select('SUM(jan+feb+mar+apr+mei+jun) AS t1');
+        $this->db->where_in('ref_snp_id', $ref_ids);
+        $this->db->where('jurusan_id', $jurusan_id);
+        $t1 = $this->db->get('item_anggaran')->row()->t1;
+
+        // Tahap 2 khusus jurusan
+        $this->db->select('SUM(jul+agu+sep+okt+nov+des) AS t2');
+        $this->db->where_in('ref_snp_id', $ref_ids);
+        $this->db->where('jurusan_id', $jurusan_id);
+        $t2 = $this->db->get('item_anggaran')->row()->t2;
+
+        $hasil_snp[] = (object)[
+            'snp' => $nama_snp,
+            'tahap1' => $t1 ?: 0,
+            'tahap2' => $t2 ?: 0
+        ];
+    }
+
+    $data['perencanaan_snp'] = $hasil_snp;
+
+    // Hitung total besar
+    $sum_total = 0;
+    foreach ($hasil_snp as $p) {
+        $sum_total += ($p->tahap1 + $p->tahap2);
+    }
+    $data['snp_grand_total'] = $sum_total;
+
+}
         }
 
 
